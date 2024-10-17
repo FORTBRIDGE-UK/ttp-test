@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7797f1a3-021b-4964-84fb-cc126861ebb7}</ProjectGuid>
-    <RootNamespace>NtQueueApcThreadExInject</RootNamespace>
+    <ProjectGuid>{2c2f2cc2-6f8c-41fe-a384-8e0b9564f6fe}</ProjectGuid>
+    <RootNamespace>DebugInject</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
